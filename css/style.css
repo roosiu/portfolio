@@ -9,6 +9,9 @@
   --color-3: #777777;
   --color-4: #fbf9f9;
   --color-5: #ebebeb;
+  --color-6: #ffd42aff;
+  --color-7: #4dbcca;
+  --color-8: #25717aff;
 }
 
 .menuMobile {
@@ -36,7 +39,7 @@
   opacity: 0.6;
   cursor: pointer;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1030px) {
   .menu {
     display: none;
   }
@@ -234,7 +237,8 @@ text-align: justify;
   padding-bottom: 4px;
   padding-right: 10px;
   border: 2px solid transparent;
-
+  transition: 0.3s;
+  border-radius: 3px;
 }
 
 .socialImg {
@@ -243,10 +247,15 @@ text-align: justify;
 
 .tekstMenu:hover {
 
-  border: 2px solid #9d9e9e;
+  border: 2px solid black;
   cursor: pointer;
+  background-color: black;
+  color: white;
+  box-shadow: 5px 10px var(--color-8);
 }
 h1 {
+
+  color: var(--color-8);
   font-family: "Rubik";
   font-size: 1.5em;
   text-align: center;
@@ -256,8 +265,11 @@ h1 {
   font-weight: bold;
   margin-left: 0;
   margin-right: 0;
+  letter-spacing: 7pt;
 }
 h2 {
+
+  color: var(--color-8);
   text-align: center;
   font-family: "Rubik";
   font-size: 1.3em;
@@ -373,4 +385,56 @@ footer {
   float: left;
   width: 40%;
   box-sizing: border-box;
+}
+
+.korzystam{
+  background-color: var(--color-8);
+}
+.whitetext{
+  color: white;
+  font-family: "Rubik";
+  display: block;
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+  letter-spacing: 2pt;
+}
+.korzystam_r{
+  font-size: 1.5em !important;
+  font-weight: bold;
+  width: 60% !important;
+}
+
+@media screen and (min-width: 900px) {
+  .korzystam_l{
+    font-size: 1em !important;
+    font-weight: lighter;
+    float: right;
+    width: 10% !important;
+    min-width: auto !important;
+    text-align: center !important;
+  }
+
+.rotate {
+
+  transform: rotate(-90deg);
+
+
+  /* Legacy vendor prefixes that you probably don't need... */
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
 }

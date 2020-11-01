@@ -45,7 +45,7 @@
 //pojawianie się elementów
 window.sr = ScrollReveal();
 
-sr.reveal("h1, h2, h3, h4, h5, h6 , .boxl, .boxr, .carousel", {
+sr.reveal("h1, h2, h3, h4, h5, h6 , .boxl, .boxr, .carousel, .scrollreveal", {
   reset: false,
   useDelay: 'onload',
   delay: 300,
@@ -56,6 +56,13 @@ $(document).ready(function() {
   $(".karuzelaPortfolio").owlCarousel({
     autoPlay: 10000,
     items: 5,
+    itemsDesktopSmall: [1199, 2],
+    itemsTablet: [768, 1],
+    pagination: false
+  });
+  $(".karuzelaKorzystam").owlCarousel({
+    autoPlay: 10000,
+    items: 10,
     itemsDesktopSmall: [1199, 2],
     itemsTablet: [768, 1],
     pagination: false
