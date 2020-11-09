@@ -79,10 +79,10 @@ $(document).ready(function() {
 
     if ($('.menuMobileRoz').is(":visible"))
     {
-         $('.menuMobileRoz').animate({ height: "toggle" , width: "toggle" });   // Hide button
+         $('.menuMobileRoz').fadeOut( "fast" );   // Hide button
     } else
 {
-  $('.menuMobileRoz').animate({ height: "toggle", width: "toggle" });
+  $('.menuMobileRoz').fadeIn( "fast" );
 }
 });
 });
@@ -161,7 +161,7 @@ $(document).ready(function() {
 
 
   $(".menuMobileRoz").click(function() {
-    $('.menuMobileRoz').animate({ height: "toggle" , width: "toggle" });
+    $('.menuMobileRoz').fadeOut( "fast" );
   });
 
 });
